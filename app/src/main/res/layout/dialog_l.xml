@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15sp"
+    android:background="@drawable/bg_dialog">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/email" />
+
+    <TextView
+        android:id="@+id/messageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="3dp"
+        android:textStyle="bold"
+        android:text="SMS Registration"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/messageContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:padding="5dp"
+        android:text="SMS "
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#605C5C"
+        android:text="Enter the Phone No." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="57dp"
+            android:layout_height="33dp"
+            android:layout_weight="0.1"
+            android:text="+94"
+            android:textColor="#605C5C"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="330dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0.9"
+            android:ems="10"
+            android:hint="7X-XXX-XXXX"
+            android:textColor="#251717"
+            android:textColorHint="#605C5C"
+            android:inputType="phone"
+            android:text=""
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/getPinNumBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_popup_bg"
+            android:text="Request PIN"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Enter the Pin No."
+        android:textColor="#605C5C"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/pinNum"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0.9"
+            android:ems="10"
+            android:hint="P564ds"
+            android:textColor="#251717"
+            android:textColorHint="#605C5C"
+            android:text=""
+            android:textSize="22dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_popup_bg"
+            android:textColor="@color/white"
+            android:text="Register"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/cancelBTN"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="Cancel"
+            android:background="@drawable/btn_popup_bg"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
